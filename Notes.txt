@@ -1,0 +1,25 @@
+
+
+Homepage     ----> Short blurbs on on about me, services page, and portfolio page with links leading to those pages. Also a consultation (contact) section
+Portfolio Page   ----> Poster Design | Website Design | Mobile Application Design | Photography | Adobe Program work
+
+
+Services Page ----> Has a consultation (contact) field
+About Me ----> My Design Philosophy | Has a consultation (contact) field
+
+Ideas:
+
+Amazon associate for design books?
+
+Colors
+
+#010203 - black
+
+#f5d31c - gold
+
+#FFFFFF - white
+
+#7a7a7a - gray
+
+#5dc764/#53b55a - green 
+

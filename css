@@ -1,0 +1,287 @@
+@font-face {
+  font-family: "myFont";
+  src: url("/fonts/ITCAvantGardeStd-XLtCn.otf");
+}
+body {
+  color: white;
+  background-color: #010203;
+  font-family: "myFont", sans serif;
+  overflow-x: hidden;
+}
+
+.header {
+  width: 100%;
+  height: 90px;
+  background-color: rgba(122, 122, 122, 0.17);
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 5px;
+  min-width: 950px;
+}
+
+#logo {
+  width: 300px;
+  background-color: red;
+  height: 90px;
+  position: absolute;
+  left: 0;
+}
+
+.nav {
+  position: absolute;
+  right: 40px;
+  top: 70px;
+}
+
+.buttonBasic {
+  display: inline;
+  margin-left: 20px;
+  text-align: center;
+  min-width: 320px;
+}
+
+.aboutMeSection {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 100px 300px 100px 100px;
+  height: 500px;
+  width: 90%;
+  height: auto;
+}
+.aboutMeSection h1 {
+  grid-row: 1/2;
+  grid-column: 1/6;
+}
+
+#markVillondoImg {
+  grid-column: 1/2;
+  grid-row: 2/4;
+}
+
+.contactInfo {
+  grid-row: 4/5;
+  grid-column: 1/2;
+}
+
+.aboutMe {
+  grid-row: 2/5;
+  grid-column: 2/6;
+}
+
+#myName {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+
+.aboutMeSection {
+  margin: auto;
+  margin-top: 150px;
+  min-width: 600px;
+}
+
+#markVillondoImg {
+  width: 100%;
+}
+
+.aboutMe {
+  text-align: justify;
+}
+
+#markVillondoImg {
+  width: 80%;
+}
+
+.contactInfo {
+  font-size: 80%;
+}
+
+.designPhilosophySection {
+  width: 50%;
+  margin: auto;
+}
+.designPhilosophySection h4 {
+  text-align: center;
+}
+.designPhilosophySection p {
+  text-align: justify;
+}
+
+.academicCredentialsSection {
+  width: 70%;
+  margin: auto;
+}
+.academicCredentialsSection h4 {
+  text-align: center;
+}
+.academicCredentialsSection p {
+  text-align: justify;
+}
+
+#portfolioTitle {
+  text-align: center;
+  margin-top: 150px;
+}
+
+.examplesSection {
+  display: inline;
+  width: 100%;
+}
+.examplesSection h4 {
+  text-align: center;
+}
+
+.example {
+  width: 20%;
+  max-height: 350px;
+  object-fit: contain;
+  margin: 1%;
+  min-width: 320px;
+  background-color: rgba(122, 122, 122, 0.17);
+  vertical-align: middle;
+}
+
+.portfolioSection {
+  width: 80%;
+  margin: auto;
+  margin-top: 100px;
+  min-width: 320px;
+  max-width: 600px;
+}
+.portfolioSection h4 {
+  text-align: center;
+}
+
+.portfolioWork {
+  margin: auto;
+  text-align: justify;
+}
+.portfolioWork .example {
+  width: 100%;
+}
+
+.section1 {
+  width: 100%;
+  height: 500px;
+  margin-top: 150px;
+}
+
+.section2 {
+  width: 100%;
+  margin-top: 100px;
+}
+
+.leafContainer {
+  position: absolute;
+  width: 100%;
+  margin-top: -250px;
+}
+
+.leaf {
+  height: 10px;
+  width: 30px;
+  background-color: white;
+  border-radius: 50%;
+  opacity: 0%;
+  position: relative;
+}
+
+#leaf1 {
+  margin-top: 100px;
+  margin-left: 200px;
+  transform: rotateY(70deg);
+}
+
+#leaf2 {
+  margin-top: 100px;
+  margin-left: 230px;
+  transform: rotateY(-20deg);
+}
+
+#leaf3 {
+  margin-top: 70px;
+  margin-left: 215px;
+  transform: rotateY(10deg);
+}
+
+.container {
+  width: 100%;
+  margin-top: 300px;
+}
+
+#screen {
+  position: absolute;
+  width: 100%;
+  background-color: #010203;
+  height: 400px;
+  z-index: 20;
+  color: white;
+  text-align: center;
+}
+
+#sun {
+  height: 150px;
+  width: 150px;
+  background-color: white;
+  border-radius: 100%;
+  margin-left: 70%;
+  position: relative;
+  z-index: -5;
+  opacity: 0%;
+}
+
+#ground {
+  height: 100px;
+  width: 100%;
+  background-color: white;
+  z-index: 19;
+}
+
+/*---KEYFRAMES---*/
+@keyframes leafanimations {
+  0% {
+    opacity: 0%;
+    left: 0px;
+  }
+  30% {
+    opacity: 0%;
+    top: 50px;
+  }
+  50% {
+    opacity: 100%;
+  }
+  70% {
+    opacity: 100%;
+  }
+  95% {
+    opacity: 0%;
+  }
+  100% {
+    left: 400px;
+    transform: rotateX(-170deg);
+    top: 110px;
+  }
+}
+@keyframes risingSunAnimation {
+  0% {
+    opacity: 0%;
+    bottom: -100px;
+  }
+  35% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+    bottom: 200px;
+  }
+}
+@keyframes screenGone {
+  0% {
+    opaciity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+
+/*# sourceMappingURL=css.map */
